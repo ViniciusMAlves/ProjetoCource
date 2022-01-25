@@ -41,8 +41,7 @@ public class UserService {
             throw new ResourceNotFoundException(id);
         } catch (DataIntegrityViolationException e){
             throw new DatabaseException(e.getMessage());
-        }
-        
+        }        
     }
 
     public User update(Long id, User obj){
